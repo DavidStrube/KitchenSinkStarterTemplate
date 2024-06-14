@@ -1,0 +1,127 @@
+<!--
+
+Add to this example:
+	Social media icons
+	Logos
+	Font imports
+	Unsplash images
+	Potentially some vector images
+	Imported external CSS and Javascript files
+
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta name="" content=""> <!-- No closing tag used, or "/" -->
+
+<meta name="author" content="Jane Doe">
+
+<!-- Often used in search results to describe content -->
+<meta name="description" content="Jane Doe's first web page">
+
+<!--
+	If/how they should analyze your webpage
+	Some bots will ignore noindex and nofollow
+	
+		index: analyze page
+		follow: bot to visit all links
+		noindex: don't analyze page
+		nofollow: don't follow links
+-->
+<meta name="robots" content="index, follow">
+
+<!-- Helps browser display websites at the appropriate scale of the users device (ie mobile) -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Telephone numbers turn into hypertext links to make a phone call-->
+<meta name="format-detection" content="telephone=yes"/>
+
+<meta name="language" content="english">
+<meta charset="UTF-8">
+<meta name="copyright" content="Copyright 2022"> 
+
+<!-- Refresh page every 30 minutes -->
+<meta http-equiv="refresh" content="30"> 
+
+<!-- How browser should cache the page-->
+<meta http-equiv="Cache-Control" content="no-cache">
+	</head>
+	<body>
+		<header>
+      <img src="logo.png">
+			<!-- Note that the nav could be instead be outside of the header element -->
+			<nav>
+				<ul>
+					<!-- Astro style routing -->
+					<li><a href="/"></a>Home</li>
+					<li><a href="/about/">About</a></li>
+
+          <!-- Traditional Local Link Routing -->
+					<li><a href="contact.html">Contact</a></li>
+          <li><a href="./pages/pricing.html">Pricing</a></li>
+
+          <!-- External Links -->
+          <li><a href="https://www.instagram.com/duolingo/" target="_blank">Duolingo</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+		
+			<!-- Semantic Structure-->
+			<!-- An article indicates complete / self-contained information that can be independently distributed -->
+			<article>
+				<h2>This is a blog post</h2>
+				<p>Hello Tuesday! Today I... </p>
+			</article>
+			
+			<!-- Nested Semantic Structure-->
+			<article>
+				<header>
+					<h2>The 80/20 Rule</h2>
+					<p>How to do more with less</p>
+				</header>
+				<main>
+					<p>People don't realize how much you can get done...</p>
+				</main>
+			</article>
+			
+			<!-- Nested Semantic Structure with sections -->
+			<!-- Sections represent a part of a greater whole. Unlike articles, they cannot be independently distributed -->
+			<!-- Note that section elements don't require article elements -->
+			<article>
+				<header>
+					<h2>One week crash course</h2>
+					<p>How I turned ten years into an "over-week" success</p>
+				</header>
+				<main>
+					<section>
+						<!-- You should use headers to describe each section -->
+						<!-- Note that the headers are "smaller" -->
+						<h3>Day One</h3>
+						<p>I was excited and nervous getting started...</p>
+					</section>
+					<section>
+						<h3>Day Two</h3>
+						<p>I accomplished less than I thought, but more to come...</p>
+					</section>
+					<section>
+						<h3>Day Three</h3>
+						<p>I got distracted today...</p>
+					</section>
+				</main>
+			</article>
+
+		</main>
+		<footer>
+			<!-- Additional Information and/or navigation-->
+				<ul>
+					<li><a href=""></a>Facebook</li>
+					<li><a href="">Instagram</a></li>
+					<li><a href="">LinkedIn</al></li>
+				</ul>
+        <p>Copyright BlahDiBlah Productions</p>
+		</footer>
+	</body>
+</html>
